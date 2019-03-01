@@ -1,0 +1,438 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, textarea, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'TitilliumWebRegular';
+  text-align: center;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a, a:hover{
+  text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clear{
+	clear: both;
+}
+
+.wrapper{
+	max-width: 1140px;
+	padding-left: 20px;
+	padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*PURPULE SECTION*/
+.purpule-section{
+  background-color: #87509c;
+  color: #fff;
+}
+.main-section{
+  padding-top: 58px;
+  padding-bottom: 145px;
+}
+.top-wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.logo{
+  background-image: url(../images/logo.png);
+  display: inline-block;
+  width: 117px;
+  height: 37px;
+  background-repeat: no-repeat;
+}
+.nav-burger-checkbox{
+  display: none;
+}
+.top-menu ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top-menu li{
+  width: 90px;
+}
+.top-menu li a{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 7px 17px;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.top-menu a:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.main-section-title{
+  padding-top: 146px;
+  font-family: 'TitilliumWebBold';
+  font-size: 42px;
+}
+.btn{
+  display: flex;
+  width: 290px;
+  height: 70px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: TitilliumWebSemiBold;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 6px;
+  border-bottom: 4px solid rgba(0,0,0,0.15);
+  margin-top: 62px;
+  cursor: pointer;
+}
+.btn-orange{
+  background-color: #eb7d4b;
+  color: #fff;
+}
+
+/*GREEN SECTION*/
+.green-section{
+  background-color: #17c2a4;
+  color: #fff;
+}
+.site-section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.site-section-title{
+  font-size: 40px;
+  font-family: 'TitilliumWebBold';
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.line{
+  width: 88px;
+  height: 4px;
+  background-color: rgba(0,0,0,0.15);
+  margin: 22px auto 0 auto;
+}
+.site-section-subtitle{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  padding-top: 24px;
+}
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col-4x{
+  width: 25%;
+  flex-basis: 25%;
+}
+.servise-col{
+  padding-top: 82px;
+  /*padding-left: 28px;
+  padding-right: 28px; */
+}
+.servise-img{
+  height: 134px;
+}
+.col-title{
+  font-family: TitilliumWebBold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 56px;
+}
+.col-subtitle{
+  padding-top: 28px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-family: TitilliumWebLight;
+  min-height: 82px;
+  max-height: 148px;
+}
+
+/*GREY SECTION*/
+.grey-section{
+  background-color: #e7f1f8;
+  color: #3c4761;
+}
+.team-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #878787;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-pos{
+  display: inline-block;
+  color: #30bae7;
+  letter-spacing: 1px;
+  padding-top: 15px;
+}
+.social-link{
+  display: inline-block;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: #bdd1df;
+  background-image: url(../images/social_sprite.png);
+  background-repeat: no-repeat;
+  margin: 32px 5px 0;
+  transition: all 0.5s;
+}
+.tw-link{
+  background-position: 3px -70px;
+}
+.fb-link{
+  background-position: 7px 2px;
+}
+.in-link{
+  background-position: 3px -25px;
+}
+.gm-link{
+  background-position: 3px -47px;
+}
+.tw-link:hover{
+  background-color: #00aced; 
+}
+.fb-link:hover{
+  background-color: #3b5998; 
+}
+.in-link:hover{
+  background-color: #007bb6; 
+}
+.gm-link:hover{
+  background-color: #dd4b39; 
+}
+
+/*WHITE SECTION*/
+.white-section{
+  background-color: #fff;
+  color: #3c4761;
+}
+.diagram{
+  width: 160px;
+  height: 160px;
+  font-family: 'TitilliumWebLight';
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: 14px solid #fff;*/
+  /*line-height: 130px;*/
+  letter-spacing: 1px;
+  /*border-radius: 50%;*/
+  margin: 84px auto 0;
+  padding-left: 10px;
+}
+.diagram span{
+  font-size: 32px;
+  padding-top: 10px;
+}
+.blue-diagram{
+  background-image: url(../images/90_percent.png);
+}
+.red-diagram{
+  background-image: url(../images/75_percent.png);
+}
+.green-diagram{
+  background-image: url(../images/70_percent.png);
+}
+.orange-diagram{
+  background-image: url(../images/85_percent.png);
+}
+
+/*ORANGE SECTION*/
+.orange-section{
+  background-color: #ffdd99;
+  color: #393939;
+}
+.orange-section-tabs{
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+  margin: 0 auto;
+}
+.orange-section-tabs li{
+  width: 84px;
+}
+.orange-section-tabs li a{
+  color: #393939;
+  background-color: rgba(0, 0, 0, 0.12);
+  /*display: inline-block;*/
+}
+.orange-section-tabs a:hover{
+  background-color: #fff;
+}
+.col-2x{
+  width: 50%;
+  flex-basis: 50%;
+}
+.orange-section-col{
+  margin: 0 auto;
+  padding: 62px 10px 0;
+}
+.orange-section-col img{
+  max-width: 100%;
+}
+.orange-section-col-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 30px;
+}
+.btn-green{
+  background-color: #17c2a4;
+  color: #fff;
+}
+
+/*RED SECTION*/
+.red-section{
+  background-color: #d74680;
+  color: #fff;
+}
+.red-section-col{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 10px 70px 0;
+}
+.red-section-img{
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #878787;
+}
+.red-section-text{
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 45px;
+}
+.red-section-italic-text{
+  font-size: 21px;
+  font-style: italic;
+  font-family: 'TitilliumWebLight';
+  line-height: 31px;
+  letter-spacing: 1px;
+}
+.red-section-title{
+  padding-top: 28px;
+  line-height: 26px;
+}
+.yellow-team-pos{
+  padding-top: 5px;
+  font-size: 18px;
+  color:#ffdd99;
+}
+
+/*BLUE SECTION*/
+.blue-section{
+  background-color: #3c5499;
+  color: #fff;
+}
+.feedback-form{
+  max-width: 935px;
+  margin: 75px auto 0;
+}
+.form-control{
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(0,0,0,0.2);
+  padding: 0 20px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 18px;
+  font-family: 'TitilliumWebRegular';
+}
+.data-input-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.data-input{
+  width: 49%;
+  height: 56px;
+  margin-bottom: 20px;
+}
+.message-input{
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.btn-blue{
+  background-color: #30bae7;
+  color: #fff;
+}
+
+/*FOOTER*/
+.footer{
+  background-color: #344b8e;
+  color: #fff;
+}
+.footer-menu{
+  width: 100%;
+  height: 114px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-link{
+  font-family: 'TitilliumWebSemiBold';
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 5px;
+  transition: all 0.5s;
+}
+.footer-link:hover{
+  color:  #30bae7;
+}
+textarea::-moz-placeholder{
+  color: #fff;
+}
